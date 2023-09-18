@@ -1,5 +1,5 @@
-//mismo array student que el del archivo data.js
-const studentss = [
+//mismo array students del archivo data.js
+const students = [
   {
     name: "Jill",
     lastname: "Doe",
@@ -33,7 +33,7 @@ const studentss = [
 ];
 
 // Aplica una serie de operaciones a la matriz 'students'
-const result2 = students
+const result = students
   // Utiliza el método 'map' para transformar cada objeto de estudiante en un nuevo objeto
   .map(({ name, lastname, age }) => ({
     student: `${name} ${lastname}`, // Crea una propiedad 'student' con el nombre completo del estudiante
@@ -47,4 +47,4 @@ const result2 = students
   .reduce((total, student) => total + student.age, 0);
 
 // Imprime el resultado, que es la suma de las edades de los estudiantes mayores de 20 años
-//console.log(result2);
+console.log(result);

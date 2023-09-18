@@ -1,3 +1,41 @@
+//mismo array points del archivo data.js
+const points = [
+  100, 20, 30, 44, 55, 70, 90, 10, 30, 45, 60, 80, 100, 100,
+];
+//mismo array students del archivo data.js
+const students = [
+  {
+    name: "Jill",
+    lastname: "Doe",
+    age: 23,
+    course: "Marketing",
+  },
+  {
+    name: "John",
+    lastname: "Doe",
+    age: 20,
+    course: "Web Development",
+  },
+  {
+    name: "Jack",
+    lastname: "Doe",
+    age: 22,
+    course: "Accounting",
+  },
+  {
+    name: "Ryan",
+    lastname: "Ray",
+    age: 20,
+    course: "Web Development",
+  },
+  {
+    name: "Jane",
+    lastname: "Doe",
+    age: 21,
+    course: "Financial Management",
+  },
+];
+
 // Calcula la suma de todos los valores en la matriz 'points'
 const total = points.reduce((total, point) => total + point, 0);
 
@@ -32,4 +70,5 @@ const resultt = developers.reduce(function (allSkills, student) {
 }, []);
 
 // Imprime la matriz 'result', que contiene todas las habilidades únicas de los desarrolladores
-//console.log(resultt);
+console.log(resultt);
+
